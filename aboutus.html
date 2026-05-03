@@ -1,89 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LOC Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-left">
-      <img src="https://img.icons8.com/fluency/48/000000/artificial-intelligence.png" alt="Logo" class="logo-img">
-      <span class="logo-text">LOC Analyzer</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="domain.html">Domain</a></li>
-      <li><a href="milestone.html">Milestones</a></li>
-      <li><a href="documents.html">Documents</a></li>
-      <li><a href="presentations.html">Presentations</a></li>
-      <li><a class="active" href="aboutus.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="#" class="try-demo-btn">Try Demo</a>
-  </nav>
 
-  <main class="about-main">
-    <div class="about-header">
-    <span class="badge badge-team">Meet the Team</span>
-      <h1>The People Behind LOC Analyzer</h1>
-      <p>Two students, two supervisors, one mission: making moderation fair, scalable, and effective.</p>
-    </div>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://img.icons8.com/fluency/48/000000/artificial-intelligence.png" alt="Logo" class="logo-img">
+                <span class="logo-text">LOC Analyzer</span>
+            </a>
+            <button class="mobile-toggle">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="domain.html">Domain</a>
+                <a href="milestone.html">Milestones</a>
+                <a href="documents.html">Documents</a>
+                <a href="presentations.html">Presentations</a>
+                <a class="active" href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-primary">Try Demo</a>
+            </div>
+        </div>
+    </header>
 
-    <!-- Research Team -->
-    <section class="team-section">
-      <h2>Research Team</h2>
-      <div class="team-grid">
-        <div class="team-card">
-          <img src="C:\Users\94761\Desktop\photos\pramudi.jpg" alt="Member 1" class="profile-pic">
-          <h3>Pramudi Bandaranayake</h3>
-          <p class="role">Research Student</p>
-          <p class="desc">Syllabus Coverage and Learning Outcome Coverage.</p>
-          <div class="social-links">
-            <a href="#">Email</a> · <a href="#">LinkedIn</a>
-          </div>
+    <main class="container">
+        <div class="page-header reveal">
+            <span class="badge">Meet the Team</span>
+            <h1>The People Behind <span class="gradient-text">LOC Analyzer</span></h1>
+            <p class="subtitle">Two students, two supervisors, one mission: making moderation fair, scalable, and effective.</p>
         </div>
 
-        <div class="team-card">
-          <img src="C:\Users\94761\Desktop\photos\kushani.jpg" alt="Member 2" class="profile-pic">
-          <h3>Kushani Rathanayake</h3>
-          <p class="role">Research Student</p>
-          <p class="desc">Bloom's Level Coverage and Marks distribution.</p>
-          <div class="social-links">
-            <a href="#">Email</a> · <a href="#">LinkedIn</a>
-          </div>
-        </div>
+        <section class="reveal" style="margin-bottom: 80px;">
+            <h2 style="text-align: center; margin-bottom: 40px;">Research Team</h2>
+            <div class="team-grid">
+                <div class="card team-card">
+                    <div class="profile-wrap">
+                        <img src="resources/pramudi.jpg" alt="Pramudi" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Pramudi+Bandaranayake&background=00e5ff&color=fff&size=150'">
+                    </div>
+                    <h3>Pramudi Bandaranayake</h3>
+                    <p class="role">Research Student</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Syllabus Coverage and Learning Outcome Coverage.</p>
+                    <div class="social-links">
+                        <a href="#">Email</a> · <a href="#">LinkedIn</a>
+                    </div>
+                </div>
 
-       
-      </div>
-    </section>
+                <div class="card team-card">
+                    <div class="profile-wrap">
+                        <img src="resources/kushani.jpg" alt="Kushani" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Kushani+Rathanayake&background=f637ec&color=fff&size=150'">
+                    </div>
+                    <h3>Kushani Rathanayake</h3>
+                    <p class="role">Research Student</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Bloom's Level Coverage and Marks distribution.</p>
+                    <div class="social-links">
+                        <a href="#">Email</a> · <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Supervisors -->
-    <section class="supervisors-section">
-      <h2>Supervisors</h2>
-      <div class="supervisors-grid">
-        <div class="supervisor-card">
-          <img src="C:\Users\94761\Desktop\photos\super.jpg" alt="Supervisor 1" class="profile-pic">
-          <h3>Prof. Dasuni Nawinna</h3>
-          <p class="role">Supervisor</p>
-          <p class="desc">Faculty of Computing, SLIIT</p>
-          <div class="social-links">
-            <a href="#">Email</a> · <a href="#">LinkedIn</a>
-          </div>
-        </div>
+        <section class="reveal" style="margin-bottom: 80px;">
+            <h2 style="text-align: center; margin-bottom: 40px;">Supervisors</h2>
+            <div class="team-grid">
+                <div class="card team-card">
+                    <div class="profile-wrap">
+                        <img src="resources/super.jpg" alt="Prof. Dasuni" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Dasuni+Nawinna&background=00e5ff&color=fff&size=150'">
+                    </div>
+                    <h3>Prof. Dasuni Nawinna</h3>
+                    <p class="role">Supervisor</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Faculty of Computing, SLIIT</p>
+                    <div class="social-links">
+                        <a href="#">Email</a> · <a href="#">LinkedIn</a>
+                    </div>
+                </div>
 
-        <div class="supervisor-card">
-          <img src="C:\Users\94761\Desktop\photos\co-super.jpg" alt="Supervisor 2" class="profile-pic">
-          <h3>Dr. Harinda Fernando</h3>
-          <p class="role">Co-Supervisor</p>
-          <p class="desc">Faculty of Computing, SLIIT</p>
-          <div class="social-links">
-            <a href="#">Email</a> · <a href="#">LinkedIn</a>
-          </div>
+                <div class="card team-card">
+                    <div class="profile-wrap">
+                        <img src="resources/co-super.jpg" alt="Dr. Harinda" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Harinda+Fernando&background=f637ec&color=fff&size=150'">
+                    </div>
+                    <h3>Dr. Harinda Fernando</h3>
+                    <p class="role">Co-Supervisor</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Faculty of Computing, SLIIT</p>
+                    <div class="social-links">
+                        <a href="#">Email</a> · <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer reveal">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="https://img.icons8.com/fluency/48/000000/artificial-intelligence.png" alt="Logo" class="logo-img">
+                        <span class="logo-text">LOC Analyzer</span>
+                    </a>
+                    <p class="footer-desc">An intelligent assessment moderation platform using AI for question analysis, coverage, and quality insights.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="domain.html">Research Domain</a></li>
+                        <li><a href="milestone.html">Milestones</a></li>
+                        <li><a href="documents.html">Documents</a></li>
+                        <li><a href="presentations.html">Presentations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Institution</h4>
+                    <div class="footer-contact">
+                        <p>Sri Lanka Institute of Information Technology</p>
+                        <p>New Kandy Road, Malabe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LOC Analyzer Team. All rights reserved. Final Year Research Project.</p>
+            </div>
         </div>
-      </div>
-    </section>
-  </main>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

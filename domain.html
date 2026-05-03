@@ -3,81 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domain</title>
+    <title>Domain - LOC Analyzer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-left">
-            <img src="https://img.icons8.com/fluency/48/000000/artificial-intelligence.png" alt="Logo" class="logo-img">
-            <span class="logo-text">LOC Analyzer</span>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://img.icons8.com/fluency/48/000000/artificial-intelligence.png" alt="Logo" class="logo-img">
+                <span class="logo-text">LOC Analyzer</span>
+            </a>
+            <button class="mobile-toggle">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a class="active" href="domain.html">Domain</a>
+                <a href="milestone.html">Milestones</a>
+                <a href="documents.html">Documents</a>
+                <a href="presentations.html">Presentations</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-primary">Try Demo</a>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="domain.html">Domain</a></li>
-            <li><a href="milestone.html">Milestones</a></li>
-            <li><a href="documents.html">Documents</a></li>
-            <li><a href="presentations.html">Presentations</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="#" class="try-demo-btn">Try Demo</a>
-    </nav>
-    <main class="domain-main">
-        <div class="domain-header">
+    </header>
+
+    <main class="container">
+        <div class="page-header reveal">
             <span class="badge">Research Domain</span>
-            <h1>The <span class="gradient-text">science</span> behind LOC Analyzer</h1>
+            <h1>The <span class="gradient-text">Science</span> Behind LOC Analyzer</h1>
             <p class="subtitle">A rigorous look at the problem, literature, methodology, and technology stack of our research project.</p>
         </div>
 
-        <section class="card">
-            <div class="card-icon">📖</div>
+        <section class="card reveal" style="margin-bottom: 40px; display: flex; gap: 30px; align-items: flex-start;">
+            <div style="font-size: 3rem; background: var(--bg-surface-hover); border-radius: 16px; padding: 20px; border: 1px solid var(--border-color);">📖</div>
             <div>
-                <h2>Literature Survey</h2>
-                <p>Existing research demonstrates that assessment moderation benefits from AI-driven analysis and automation. Recent advances in natural language processing and machine learning have enabled scalable, objective evaluation of exam content and marking schemes. LOC Analyzer synthesizes findings from educational data mining, automated grading, and quality assurance to build an evidence-based platform.</p>
+                <h2 style="margin-bottom: 15px;">Literature Survey</h2>
+                <p style="color: var(--text-muted);">Existing research demonstrates that assessment moderation benefits from AI-driven analysis and automation. Recent advances in natural language processing and machine learning have enabled scalable, objective evaluation of exam content and marking schemes. LOC Analyzer synthesizes findings from educational data mining, automated grading, and quality assurance to build an evidence-based platform.</p>
             </div>
         </section>
 
-        <span class="badge badge-gap">RESEARCH GAP</span>
-        <h2 class="section-title">What <span class="gradient-text">existing solutions miss</span></h2>
-        <div class="card-grid">
-            <div class="card small"><div class="card-icon">💡</div><div><b>Costly Moderation</b><br>Manual moderation is time-consuming and expensive for institutions.</div></div>
-            <div class="card small"><div class="card-icon">💡</div><div><b>Limited Scalability</b><br>Traditional methods struggle to scale with large student cohorts.</div></div>
-            <div class="card small"><div class="card-icon">💡</div><div><b>Subjectivity</b><br>Human bias can affect the fairness and consistency of moderation.</div></div>
-            <div class="card small"><div class="card-icon">💡</div><div><b>Delayed Feedback</b><br>Slow moderation delays actionable feedback for students and staff.</div></div>
+        <div class="reveal" style="text-align: center; margin: 80px 0 40px;">
+            <span class="badge">Research Gap</span>
+            <h2>What <span class="gradient-text">Existing Solutions Miss</span></h2>
         </div>
 
-        <section class="card card-highlight">
-            <div class="card-icon">🎯</div>
-            <div>
-                <h2>Problem Statement</h2>
-                <p>Educational institutions need efficient, objective, and scalable assessment moderation. Current solutions are manual, subjective, and slow—resulting in inconsistent quality and delayed feedback. LOC Analyzer addresses these challenges with AI-powered automation and analytics.</p>
+        <div class="domain-grid">
+            <div class="card domain-card reveal">
+                <div class="domain-icon">💡</div>
+                <h3 style="margin-bottom: 10px;">Costly Moderation</h3>
+                <p style="color: var(--text-muted);">Manual moderation is time-consuming and expensive for institutions.</p>
+            </div>
+            <div class="card domain-card reveal">
+                <div class="domain-icon">📈</div>
+                <h3 style="margin-bottom: 10px;">Limited Scalability</h3>
+                <p style="color: var(--text-muted);">Traditional methods struggle to scale with large student cohorts.</p>
+            </div>
+            <div class="card domain-card reveal">
+                <div class="domain-icon">⚖️</div>
+                <h3 style="margin-bottom: 10px;">Subjectivity</h3>
+                <p style="color: var(--text-muted);">Human bias can affect the fairness and consistency of moderation.</p>
+            </div>
+            <div class="card domain-card reveal">
+                <div class="domain-icon">⏱️</div>
+                <h3 style="margin-bottom: 10px;">Delayed Feedback</h3>
+                <p style="color: var(--text-muted);">Slow moderation delays actionable feedback for students and staff.</p>
+            </div>
+        </div>
+
+        <section class="card reveal" style="margin-bottom: 80px; border-left: 4px solid var(--accent-magenta);">
+            <div style="display: flex; gap: 30px; align-items: flex-start;">
+                <div style="font-size: 3rem; background: var(--bg-surface-hover); border-radius: 16px; padding: 20px; border: 1px solid var(--border-color);">🎯</div>
+                <div>
+                    <h2 style="margin-bottom: 15px;">Problem Statement</h2>
+                    <p style="color: var(--text-muted);">Educational institutions need efficient, objective, and scalable assessment moderation. Current solutions are manual, subjective, and slow—resulting in inconsistent quality and delayed feedback. LOC Analyzer addresses these challenges with AI-powered automation and analytics.</p>
+                </div>
             </div>
         </section>
 
-        <span class="badge badge-obj">OBJECTIVES</span>
-        <h2 class="section-title">What we set out to <span class="gradient-text">achieve</span></h2>
-        <ul class="objectives-list">
-            <li><span class="obj-num">1</span> Build an AI model for automated assessment moderation</li>
-            <li><span class="obj-num">2</span> Provide real-time analytics dashboards for educators</li>
-            <li><span class="obj-num">3</span> Ensure fairness and consistency in marking</li>
-            <li><span class="obj-num">4</span> Enable scalable moderation for large cohorts</li>
-            <li><span class="obj-num">5</span> Validate effectiveness via pilot testing</li>
-        </ul>
-
-        <span class="badge badge-method">METHODOLOGY</span>
-        <h2 class="section-title">The LOC Analyzer <span class="gradient-text">AI pipeline</span></h2>
-        <div class="pipeline">
-            <div class="pipeline-step"><div class="pipe-icon">🔍</div><b>Exam Input</b><br>Upload or enter exam papers</div>
-            <div class="pipe-arrow">→</div>
-            <div class="pipeline-step"><div class="pipe-icon">🤖</div><b>AI Model</b><br>Analyze content & marking</div>
-            <div class="pipe-arrow">→</div>
-            <div class="pipeline-step"><div class="pipe-icon">📊</div><b>Scoring</b><br>Automated moderation results</div>
-            <div class="pipe-arrow">→</div>
-            <div class="pipeline-step"><div class="pipe-icon">💬</div><b>Feedback</b><br>Actionable insights</div>
+        <div class="reveal" style="text-align: center; margin: 80px 0 40px;">
+            <span class="badge">Objectives</span>
+            <h2>What We Set Out To <span class="gradient-text">Achieve</span></h2>
         </div>
 
-       
+        <div class="card reveal" style="max-width: 800px; margin: 0 auto 80px;">
+            <ul style="list-style: none;">
+                <li style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color);">
+                    <span style="background: var(--accent-gradient); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</span>
+                    <span style="font-size: 1.1rem;">Build an AI model for automated assessment moderation</span>
+                </li>
+                <li style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color);">
+                    <span style="background: var(--accent-gradient); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</span>
+                    <span style="font-size: 1.1rem;">Provide real-time analytics dashboards for educators</span>
+                </li>
+                <li style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color);">
+                    <span style="background: var(--accent-gradient); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</span>
+                    <span style="font-size: 1.1rem;">Ensure fairness and consistency in marking</span>
+                </li>
+                <li style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color);">
+                    <span style="background: var(--accent-gradient); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">4</span>
+                    <span style="font-size: 1.1rem;">Enable scalable moderation for large cohorts</span>
+                </li>
+                <li style="display: flex; align-items: center; gap: 20px;">
+                    <span style="background: var(--accent-gradient); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">5</span>
+                    <span style="font-size: 1.1rem;">Validate effectiveness via pilot testing</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="reveal" style="text-align: center; margin: 80px 0 40px;">
+            <span class="badge">Methodology</span>
+            <h2>The LOC Analyzer <span class="gradient-text">AI Pipeline</span></h2>
+        </div>
+
+        <div class="pipeline reveal">
+            <div class="pipeline-step">
+                <div class="pipe-icon">🔍</div>
+                <h4>Exam Input</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">Upload or enter exam papers</p>
+            </div>
+            <div class="pipeline-step">
+                <div class="pipe-icon">🤖</div>
+                <h4>AI Model</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">Analyze content & marking</p>
+            </div>
+            <div class="pipeline-step">
+                <div class="pipe-icon">📊</div>
+                <h4>Scoring</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">Automated moderation results</p>
+            </div>
+            <div class="pipeline-step">
+                <div class="pipe-icon">💬</div>
+                <h4>Feedback</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">Actionable insights</p>
+            </div>
+        </div>
+
     </main>
+
+    <footer class="footer reveal">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="https://img.icons8.com/fluency/48/000000/artificial-intelligence.png" alt="Logo" class="logo-img">
+                        <span class="logo-text">LOC Analyzer</span>
+                    </a>
+                    <p class="footer-desc">An intelligent assessment moderation platform using AI for question analysis, coverage, and quality insights.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="domain.html">Research Domain</a></li>
+                        <li><a href="milestone.html">Milestones</a></li>
+                        <li><a href="documents.html">Documents</a></li>
+                        <li><a href="presentations.html">Presentations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Institution</h4>
+                    <div class="footer-contact">
+                        <p>Sri Lanka Institute of Information Technology</p>
+                        <p>New Kandy Road, Malabe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LOC Analyzer Team. All rights reserved. Final Year Research Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
